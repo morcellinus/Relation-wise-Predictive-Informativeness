@@ -1,0 +1,67 @@
+name: rq3_first_hop_only_ks_gt_kt_8_4_m6
+description: 'Final RQ3 first_hop_only: tau_AC=tau, tau_CP=0, A,C=8, P=4, m_r=6.'
+feature_dim: 64
+allow_multi_edges: false
+add_reverse_relations: false
+edge_set_mode: shared_undirected
+target_types:
+- P
+supervision_types:
+- P
+split:
+  target_type: P
+  train_ratio: 0.6
+  val_ratio: 0.2
+  seed: 0
+node_types:
+  A:
+    num_nodes: 1000
+    num_classes: 8
+    class_prior:
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    gamma: 1.0
+    sigma: 1.0
+  C:
+    num_nodes: 1000
+    num_classes: 8
+    class_prior:
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    - 0.125
+    gamma: 1.0
+    sigma: 1.0
+  P:
+    num_nodes: 1000
+    num_classes: 4
+    class_prior:
+    - 0.25
+    - 0.25
+    - 0.25
+    - 0.25
+    gamma: 1.0
+    sigma: 1.0
+relations:
+  A_to_C:
+    source_type: A
+    destination_type: C
+    out_degree: 6
+  C_to_P:
+    source_type: C
+    destination_type: P
+    out_degree: 6
+sweep:
+  relation_tau:
+    A_to_C: sweep
+    C_to_P: 0.0

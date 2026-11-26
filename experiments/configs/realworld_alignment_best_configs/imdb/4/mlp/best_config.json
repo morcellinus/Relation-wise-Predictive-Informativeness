@@ -1,0 +1,30 @@
+{
+  "backbone": "mlp",
+  "best_val": {
+    "accuracy": 0.5330620549338759,
+    "auc": 0.805271159054012,
+    "macro_f1": 0.5055958669556663,
+    "micro_f1": 0.5330620549338759
+  },
+  "config": {
+    "device": "cuda",
+    "dropout": 0.5,
+    "epochs": 300,
+    "heads": 4,
+    "hidden_dim": 128,
+    "lr": 0.005,
+    "num_layers": 2,
+    "patience": 50,
+    "weight_decay": 0.0005
+  },
+  "dataset": "imdb",
+  "epochs_trained": 68,
+  "split": 4,
+  "test": {
+    "accuracy": 0.48689516129032256,
+    "auc": 0.780600508372821,
+    "macro_f1": 0.4435093446327988,
+    "micro_f1": 0.48689516129032256
+  },
+  "trial": 7
+}

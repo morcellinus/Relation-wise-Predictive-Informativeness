@@ -1,0 +1,30 @@
+{
+  "backbone": "mlp",
+  "best_val": {
+    "accuracy": 0.7245337159253945,
+    "auc": 0.8447263431383975,
+    "macro_f1": 0.6759781523122386,
+    "micro_f1": 0.7245337159253945
+  },
+  "config": {
+    "device": "cuda",
+    "dropout": 0.5,
+    "epochs": 300,
+    "heads": 4,
+    "hidden_dim": 64,
+    "lr": 0.005,
+    "num_layers": 2,
+    "patience": 50,
+    "weight_decay": 0.0005
+  },
+  "dataset": "freebase",
+  "epochs_trained": 79,
+  "split": 4,
+  "test": {
+    "accuracy": 0.717546362339515,
+    "auc": 0.8537124015605585,
+    "macro_f1": 0.6682218400068688,
+    "micro_f1": 0.717546362339515
+  },
+  "trial": 3
+}

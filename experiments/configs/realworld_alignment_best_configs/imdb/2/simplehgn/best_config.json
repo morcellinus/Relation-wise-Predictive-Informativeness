@@ -1,0 +1,30 @@
+{
+  "backbone": "simplehgn",
+  "best_val": {
+    "accuracy": 0.5300101729399797,
+    "auc": 0.8214078106746718,
+    "macro_f1": 0.4816274252664649,
+    "micro_f1": 0.5300101729399797
+  },
+  "config": {
+    "device": "cuda",
+    "dropout": 0.3,
+    "epochs": 300,
+    "heads": 4,
+    "hidden_dim": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "patience": 50,
+    "weight_decay": 0.0005
+  },
+  "dataset": "imdb",
+  "epochs_trained": 91,
+  "split": 2,
+  "test": {
+    "accuracy": 0.5131048387096774,
+    "auc": 0.7962976301992984,
+    "macro_f1": 0.4576947434920512,
+    "micro_f1": 0.5131048387096774
+  },
+  "trial": 0
+}

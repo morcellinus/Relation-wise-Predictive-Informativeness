@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relation-wise-predictive-informativeness"
+version = "0.1.0"
+description = "Relation-wise Predictive Informativeness for heterogeneous graphs"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26.4",
+    "scipy>=1.13.1",
+    "torch>=2.4.0",
+    "torch-geometric>=2.6.1,<3",
+]
+
+[tool.setuptools]
+packages = ["rpi"]

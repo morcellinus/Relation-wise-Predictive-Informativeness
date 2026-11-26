@@ -1,0 +1,46 @@
+name: rq1_ks_eq_kt_4_4_m6
+description: 'Final RQ1: A-P relation, K_s = K_t, 4->4 classes, m_r=6.'
+feature_dim: 64
+allow_multi_edges: false
+add_reverse_relations: false
+edge_set_mode: shared_undirected
+target_types:
+- A
+- P
+supervision_types:
+- A
+- P
+split:
+  target_type: A
+  train_ratio: 0.6
+  val_ratio: 0.2
+  seed: 0
+node_types:
+  A:
+    num_nodes: 1000
+    num_classes: 4
+    class_prior:
+    - 0.25
+    - 0.25
+    - 0.25
+    - 0.25
+    gamma: 1.0
+    sigma: 1.0
+  P:
+    num_nodes: 1000
+    num_classes: 4
+    class_prior:
+    - 0.25
+    - 0.25
+    - 0.25
+    - 0.25
+    gamma: 1.0
+    sigma: 1.0
+relations:
+  A_to_P:
+    source_type: A
+    destination_type: P
+    out_degree: 6
+sweep:
+  relation_tau:
+    A_to_P: sweep

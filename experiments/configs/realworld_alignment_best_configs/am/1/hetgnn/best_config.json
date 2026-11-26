@@ -1,0 +1,30 @@
+{
+  "backbone": "hetgnn",
+  "best_val": {
+    "accuracy": 0.6414141414141414,
+    "auc": 0.8968683280607952,
+    "macro_f1": 0.39918906171906715,
+    "micro_f1": 0.6414141414141414
+  },
+  "config": {
+    "device": "cuda",
+    "dropout": 0.5,
+    "epochs": 300,
+    "heads": 4,
+    "hidden_dim": 128,
+    "lr": 0.005,
+    "num_layers": 2,
+    "patience": 50,
+    "weight_decay": 0.0005
+  },
+  "dataset": "am",
+  "epochs_trained": 300,
+  "split": 1,
+  "test": {
+    "accuracy": 0.6341463414634146,
+    "auc": 0.8536927184521619,
+    "macro_f1": 0.37710592735064774,
+    "micro_f1": 0.6341463414634146
+  },
+  "trial": 0
+}

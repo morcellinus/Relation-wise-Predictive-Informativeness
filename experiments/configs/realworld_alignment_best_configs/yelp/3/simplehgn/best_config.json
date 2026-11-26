@@ -1,0 +1,30 @@
+{
+  "backbone": "simplehgn",
+  "best_val": {
+    "accuracy": 0.896551724137931,
+    "auc": 0.9651212739849634,
+    "macro_f1": 0.8931779414101818,
+    "micro_f1": 0.896551724137931
+  },
+  "config": {
+    "device": "cuda",
+    "dropout": 0.5,
+    "epochs": 300,
+    "heads": 4,
+    "hidden_dim": 128,
+    "lr": 0.005,
+    "num_layers": 2,
+    "patience": 50,
+    "weight_decay": 0.0005
+  },
+  "dataset": "yelp",
+  "epochs_trained": 300,
+  "split": 3,
+  "test": {
+    "accuracy": 0.8740458015267175,
+    "auc": 0.9529620387405745,
+    "macro_f1": 0.8712144847527594,
+    "micro_f1": 0.8740458015267175
+  },
+  "trial": 7
+}
